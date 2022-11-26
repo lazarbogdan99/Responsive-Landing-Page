@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+* {
+  /**margin: 0; I cannot use this since it will break the positioning of the elements
+                I should have used this in the begining of the project.
+                I only used this when I finished :(*/
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+margin: 0;
+background:#789a7e;
+font-weight: 400;
+}
+
+/** setting for making the header visible*/
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+ 
+ }
+
+/** color for header*/
+header{
+  height: 4.2vh;
+  align-items: center;
+  position: relative;
+  /**linear-gradient(rgba(120, 154, 126, 1), rgba(120, 154, 126, 0))**/
+  background:rgb(120, 154, 126); 
+}
+
+
+/** container for the logo and nav*/
+.container{
+  max-width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/** setting the size and postion of the logo*/ 
+.logohead{
+  width: 1.3vw;
+  bottom: 0.1vh; 
+  float: left;
+  position: relative;
+}
+
+/** setting nav element on the right*/
+nav{
+  float: right;
+
+}
+
+/** setting the postioning and appearence of the unorderd list*/
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/** setting the postion and display of each link*/
+nav li{
+  display: inline-block;
+  margin-left: 1vw;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+
+  position: relative;
+}
+
+  
+
+/** setting the style for each link*/
+nav a{
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1vw;
+  float: right;
+  display: block;
+  text-align: center;
+}
+
+nav a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/** setting the effect for each nav link*/
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+/** CSS for banner*/
+.hero {
+  /** Sizing */
+  width: 100%;
+  height: 90vh;
+  
+  /** Flexbox*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /** Text styles*/
+  text-align: center;
+  color: white;
+  
+  /** Background styles*/
+  height:100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.475),rgba(0, 0, 0, 0.5)), url(./assets/garden.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  /** Text styles*/
+  font-size: 3.5vw;
+ 
+  
+  /** Margins*/
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.hero h2 {
+  /** Text styles*/
+  font-size: 2vw;
+  
+  /** Margins*/
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/** settings for the button on the banner*/
+.btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 14px 28px;
+  top: 6vh;
+  position: relative;
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+/** settings for the button on the banner*/
+.hero-btn {
+  border-color: #e7e7e7;
+}
+/** settings for the button on the banner*/
+.hero-btn:hover {
+  background: #e7e7e7;
+  color: black;
+  transition: 0.8s;
+}
+/** settings for the features section*/
+.offerings{
+  height: 70vh;
+  width: auto;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+  
+}
+/** setting the postion and display of the picture's placeholders*/
+.offering{
+  height: 70%;
+  width: 20%;
+  margin: 5%;
+  border: 0.1vw solid white;
+  background-position: center;
+  background-size: cover;
+  display: inline-flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+/** inserting picture in the placeholder*/
+.offering.plants {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(./assets/bonsai.png);
+}
+/** inserting picture in the placeholder*/
+.offering.equipment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(./assets/pngwing.png);
+}
+/** inserting picture in the placeholder */
+.offering.services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(./assets/services.png);
+}
+
+/** setting the postion of the features elements*/
+.offering-content {
+  position: relative;
+}
+
+/** setting the postion of the description*/
+.offering-description {
+  text-align: center;
+  margin-bottom: 15vh;
+  font-size: 2vw;
+  color: #ffffff;
+}
+
+/** setting the buttons for features*/
+.bttn {
+  border: 0.1em solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 1.4em;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  bottom: 2em;
+  position: relative;
+}
+/** footer settings*/
+footer{
+  margin-top: 1.2vh;
+  width: 80%;
+  height: 20vh;
+  display: flex;
+}
+/** footer logo settings*/
+.logofoot{
+  width: 5vw; 
+  padding: 0vh 1vw 1vh;
+  right: 2vw;
+  position: relative;
+}
+/** copyright text settings*/
+
+.col-2{
+  position: relative;
+  float: right;
+  padding: 1vh 0vw 2vh 20vw;
+  display: flex;
+  flex-direction: column;
+  left: 25%;
+
+}
+/** copyright text settings*/
+.col-2 p{
+  bottom: 2.8vh;
+  float: right;
+  font-size: 1vw;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  color: #444444;
+}
+
+footer div{
+  text-align: center;
+  flex-grow: 2;
+}
+/*Title for useful inks settings */
+h3{
+  position: relative;
+  bottom: 12%;
+  color: #444444;
+  font-size: 1.2vw
+}
+
+
+/*settings for useful inks settings text */
+.col-2 a{
+  position: relative;
+  padding: 1%;
+  bottom: 20%;
+  text-decoration: none;
+  font-size: 1vw;
+  color:#444444;
+}
+
+.col-2 a:hover{
+  text-decoration: underline;
+}
+
+/*sticky menu */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/** This was used for making the logo to pulse,
+    but it did not work without making the whole header grow and shrink 
+    while the animation was running. 
+    If you read this, I might be still trying to fix this bug :) 
+    Thanks for reviwing my code */ 
+@keyframes pulse {
+  0%{
+    width: 3%;
+  } 25% {
+    width: 3.2%;
+  } 50% {
+    width: 3.3%;
+  } 75% {
+    width: 3.2%;
+  } 100% {
+    width: 3%;
+  }
+}

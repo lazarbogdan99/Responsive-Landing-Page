@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description", content="A medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping"/> 
+    <meta name=”title”, content="Lucky Shrub"> 
+    <meta name="author" content="Bogdan L">
+    <meta name="language" content="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="googlebot" content=”notranslate” /> 
+    <meta name="rating" content="safe for kids"> 
+    <meta name="copyright" content="Copyright 2022">  
+    <link rel="stylesheet" href="styles.css">
+    <script src="sticky.js"></script>
+    <title> Lucky Shrub | Home </title>
+</head>
+<body>  
+    
+    <header id="navbar">     
+        <div class = "container" > 
+            <img src="assets\logo.png" class = "logohead" alt="Lucky Shrub">
+            <nav>
+                <ul>
+                    <li><a href="https://example.com/">Home</a></li>
+                    <li><a href="https://example.com/">About</a></li>
+                    <li><a href="https://example.com/">Shop</a></li>
+                    <li><a href="https://example.com/">Blog</a></li>
+                    <li><a href="https://example.com/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+
+
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Known for its<strong> quality products and uniqe designes</strong></h1>
+                <h2>Redecorate your garden with the latest designes and decorations!</h2>
+                <a href="https://example.com/" class="btn hero-btn">Get started...</a>
+            </div>
+        </section>
+
+
+        <section class="offerings">
+            <article class="offering plants">
+            <div class="offering-content">
+                
+                <h2 class="offering-description">We bring the plants and trees that you dream about</h2>
+                <a href="https://example.com/" class="bttn hero-btn">View offers...</a>
+            </div>
+        </article>
+
+
+        <article class="offering equipment">
+            <div class="offering-content">
+             
+                <h2 class="offering-description">Make your work easier with our smart tools!</h2>
+                <a href="https://example.com/" class="bttn hero-btn">View offers...</a>
+            </div>
+        </article>
+
+
+        <article class="offering services">
+            <div class="offering-content">
+                
+                <h2 class="offering-description">Transform your garden in a true oasis!</h2>
+                <a href="https://example.com/" class="bttn hero-btn">View offers...</a>
+            </div>
+        </article>
+        </section>
+
+
+    </main>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+        
+
+    <footer>
+        <div class="col-1">
+            <img src="assets\Asset 3@3x.png" class = "logofoot" alt="Lucky Shrub">
+        </div>
+
+        <div class = 'col-2'>
+            <h3>Useful links</h3>
+            <a href="https://example.com/">About</a> 
+            <a href="https://example.com/">Shop</a>
+            <a href="https://example.com/">Contact</a>
+            <a href="https://example.com/">Terms and Conditions</a>
+            <p>Lucky Shrub © 2012 - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
